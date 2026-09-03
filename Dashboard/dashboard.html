@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div id="Body">
+        <nav id="navbar">
+            <p id="Naming">Expense Tracker</p>
+            <div id="username-loginIcon">
+            <!--yeha pe username daalna hai wo login page se milega -->
+               <p id="usrname">Anuj Kumar</p>
+               <button id="userIcon">AK</button>
+               <button id="logoutButton">Logout</button>
+            </div>
+        </nav>
+        <!-- calender -->
+        <div id="dateSection">
+           <label for="calender">Date</label>
+           <input type="month" id="calender">
+        </div>
+        <!-- body -->
+         <!-- this part -->
+        <div id="Report">
+            <div id="Investment">
+                <p id="showDate">Total spent in</p>
+                <!-- need to add functionality after creating expenses part -->
+                <p id="invested">₹1850</p>
+            </div>
+            <div id="Balance">
+                <!-- need to complete this after add money part -->
+                <div id="totalBalance">
+                    <p id="dot-green"></p>
+                    <p id="Total-Balance"></p>
+                </div>
+                <!-- need to complete this after some time -->
+                <div id="currentBalance">
+                    <p id="dot-orange"></p>
+                    <p id="Current-Balance"></p>
+                </div>
+                
+                
+            </div>
+
+        </div>
+        <!-- Money summary part -->
+       <div id="summaryPart">
+
+            <!-- Take Money -->
+            <div id="takeMoneyHeader">
+
+                <nav id="taknav">
+                    <p id="TakeMoney">Take Money</p>
+                    <button id="Add-taken-money-from-whom">+</button>
+                </nav>
+
+                <div>
+                    <div id="takenMoneyList"></div>
+                </div>
+
+            </div>
+
+
+            <!-- Add Money -->
+            <div id="AddMoney">
+
+                <nav id="addnav">
+                    <p id="Add-Money">Add Money</p>
+                    <button id="Money-Add-button">+</button>
+                </nav>
+
+                <div>
+                    <div id="addedMoneyList"></div>
+                </div>
+
+            </div>
+
+
+            <!-- Expense -->
+            <div id="ExpenseHeader">
+
+                <nav id="expensenav">
+                    <p id="Expense">Expense</p>
+                    <button id="Expense-Add-button">+</button>
+                </nav>
+
+                <div>
+                    <div id="expenseList"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+    
+</body>
+</html>

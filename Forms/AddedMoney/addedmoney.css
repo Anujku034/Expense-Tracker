@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #f5f7f8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main Form */
+
+#AddMoneyForm {
+    width: 400px;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Labels */
+
+#AddMoneyForm label {
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #374151;
+}
+
+
+/* Input */
+
+#AddMoneyForm input {
+    width: 100%;
+    height: 45px;
+
+    padding: 0 14px;
+
+    margin-bottom: 22px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+/* Input focus */
+
+#AddMoneyForm input:focus {
+    border-color: #159b87;
+
+    box-shadow: 0 0 0 3px rgba(21, 155, 135, 0.12);
+}
+
+
+/* Submit Button */
+
+#Submit {
+    width: 100%;
+    height: 45px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #159b87;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+#Submit:hover {
+    background-color: #117c6d;
+}

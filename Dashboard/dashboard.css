@@ -1,0 +1,805 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#navbar {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    background-color: white;
+}
+
+#Naming {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#username-loginIcon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#usrname {
+    display: block;
+    color: rgb(120, 35, 35);
+    font-size: 18px;
+    font-weight: bold;
+    visibility: visible;
+    opacity: 1;
+}
+
+#userIcon {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgb(51, 161, 90);
+    color: white;
+
+    font-weight: bold;
+}
+#dateSection {
+    width: fit-content;      
+    margin-left: auto;
+    margin-right: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    background-color: #ffffff;
+    border: 1px solid #ebeef4;
+    border-radius: 15px;
+}
+
+#dateSection label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #545d6d;
+}
+
+#calender {
+    padding: 8px 10px;
+
+    border: none;
+    outline: none;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-family: inherit;
+    color: #374151;
+
+    cursor: pointer;
+    background-color: #f8fafc;
+}
+/* Main Report Card */
+#Report {
+    width: 90%;
+    min-height: 230px;
+
+    margin: 30px auto;
+    padding: 35px 45px;
+
+    background: linear-gradient(120deg, #344f5d, #183d35);
+
+    border-radius: 25px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Total spent section */
+#Investment {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* "Total spent in September 2026" */
+#showDate {
+    font-size: 17px;
+    font-weight: 500;
+    color: #e5e7eb;
+
+    margin-bottom: 10px;
+}
+
+
+/* ₹1850 */
+#invested {
+    font-size: 52px;
+    font-weight: 700;
+
+    color: white;
+
+    line-height: 1.1;
+}
+
+
+/* Balance section */
+#Balance {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px dashed rgba(255, 255, 255, 0.4);
+}
+
+
+/* Money in + Balance containers */
+#totalBalance,
+#currentBalance {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* Green and orange dots */
+#dot-green,
+#dot-orange {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    margin: 0;
+}
+
+
+/* Green dot */
+#dot-green {
+    background-color: #6ee7b7;
+}
+
+
+/* Orange dot */
+#dot-orange {
+    background-color: #fb923c;
+}
+
+
+/* Money in / Balance text */
+#Total-Balance,
+#Current-Balance {
+    margin: 0;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Make balance slightly different */
+#Total-Balance {
+    color: #e5e7eb;
+}
+
+#Current-Balance {
+    color: #e5e7eb;
+}
+#takeMoneyHeader {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 30px;
+}
+
+#TakeMoney {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#Add-taken-money-from-whom {
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #159b87;
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+#ExpenseHeader {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 30px;
+}
+
+#Expense {
+    margin: 0;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #1f2937;
+}
+
+#Expense-Add-button {
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #c45a32;
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+#Expense-Add-button:hover {
+    background-color: #a94625;
+    transform: scale(1.05);
+}
+#AddMoney {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 30px;
+}
+
+#Add-Money {
+    margin: 0;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #1f2937;
+}
+
+#Money-Add-button {
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #159b87;
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+#Money-Add-button:hover {
+    background-color: #117c6d;
+    transform: scale(1.05);
+}
+#summaryPart {
+    width: 90%;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* All three boxes */
+#takeMoneyHeader,
+#AddMoney,
+#ExpenseHeader {
+    min-height: 100px;
+
+    padding: 20px 25px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Take Money */
+#TakeMoney {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* Add Money */
+#Add-Money {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* Expense */
+#Expense {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+
+/* Common + button style */
+#Add-taken-money-from-whom,
+#Money-Add-button,
+#Expense-Add-button {
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 27px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+/* Take Money + */
+#Add-taken-money-from-whom {
+    background-color: #159b87;
+}
+
+#Add-taken-money-from-whom:hover {
+    background-color: #117c6d;
+}
+
+
+/* Add Money + */
+#Money-Add-button {
+    background-color: #159b87;
+}
+
+#Money-Add-button:hover {
+    background-color: #117c6d;
+}
+
+
+/* Expense + */
+#Expense-Add-button {
+    background-color: #c45a32;
+}
+
+#Expense-Add-button:hover {
+    background-color: #a94625;
+}
+#takenMoneyList {
+    width: 100%;
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.taken-money-entry {
+    width: 100%;
+    padding: 12px 15px;
+
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.taken-money-name {
+    margin: 0;
+    flex: 1;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.taken-money-amount {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #c45a32;
+
+    white-space: nowrap;
+}
+
+.taken-money-date {
+    margin: 0;
+
+    font-size: 13px;
+    color: #6b7280;
+
+    white-space: nowrap;
+}
+
+#summaryPart {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+
+/* ---------------- CARD ---------------- */
+
+#takeMoneyHeader,
+#AddMoney,
+#ExpenseHeader {
+    width: 100%;
+    min-height: 180px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    /* IMPORTANT */
+    display: block;
+}
+
+
+/* ---------------- NAVBAR INSIDE CARD ---------------- */
+
+#taknav,
+#addnav,
+#expensenav {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* ---------------- TITLES ---------------- */
+
+#TakeMoney,
+#Add-Money,
+#Expense {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+
+/* ---------------- PLUS BUTTON ---------------- */
+
+#Add-taken-money-from-whom,
+#Money-Add-button,
+#Expense-Add-button {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    flex-shrink: 0;
+
+    transition: 0.2s ease;
+}
+
+
+/* Take Money */
+
+#Add-taken-money-from-whom {
+    background-color: #159b87;
+}
+
+#Add-taken-money-from-whom:hover {
+    background-color: #117c6d;
+    transform: scale(1.05);
+}
+
+
+/* Add Money */
+
+#Money-Add-button {
+    background-color: #159b87;
+}
+
+#Money-Add-button:hover {
+    background-color: #117c6d;
+    transform: scale(1.05);
+}
+
+
+/* Expense */
+
+#Expense-Add-button {
+    background-color: #c45a32;
+}
+
+#Expense-Add-button:hover {
+    background-color: #a94625;
+    transform: scale(1.05);
+}
+
+
+/* ---------------- LIST ---------------- */
+
+#takenMoneyList,
+#addedMoneyList,
+#expenseList {
+    width: 100%;
+
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* ---------------- TAKE MONEY ENTRY ---------------- */
+
+.taken-money-entry {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.taken-money-name {
+    margin: 0;
+    flex: 1;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #1f2937;
+}
+
+.taken-money-amount {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #c45a32;
+
+    white-space: nowrap;
+}
+
+.taken-money-date {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #6b7280;
+
+    white-space: nowrap;
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 900px) {
+
+    #summaryPart {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.added-money-entry {
+    width: 100%;
+    padding: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.added-money-amount {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #159b87;
+}
+
+.added-money-date {
+    margin: 0;
+    font-size: 12px;
+    color: #6b7280;
+}
+/* Expense entry */
+.expense-entry {
+    width: 100%;
+    padding: 12px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+/* Expense name */
+.expense-name {
+    margin: 0;
+    flex: 1;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #1f2937;
+}
+
+
+/* Expense amount */
+.expense-amount {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #c45a32;
+
+    white-space: nowrap;
+}
+
+
+/* Expense date and time */
+.expense-date {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #6b7280;
+
+    white-space: nowrap;
+}
+#ExpenseHeader {
+    width: 100%;
+    min-height: 180px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: block;
+}
+#logoutButton {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 9px 15px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    background-color: white;
+    color: #374151;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+#logoutButton span {
+    font-size: 20px;
+    line-height: 1;
+}
+
+#logoutButton:hover {
+    background-color: #fff1f2;
+    color: #dc2626;
+    border-color: #fecaca;
+    transform: translateY(-1px);
+}

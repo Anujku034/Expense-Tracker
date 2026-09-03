@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+
+<body>
+
+    <div id="TakenMoney">
+
+        <label for="name">Expense Name</label>
+        <input 
+            type="text" 
+            id="name" 
+            placeholder="e.g Groceries/fuel..."
+        >
+
+        <label for="Amount">Amount</label>
+        <input 
+            type="number" 
+            id="Amount" 
+            placeholder="XXXXXX"
+        >
+
+        <!-- Date and Time -->
+        <label for="dateTime">Date & Time</label>
+        <input 
+            type="datetime-local" 
+            id="dateTime"
+        >
+
+        <button id="Submit">Submit</button>
+
+    </div>
+    <script src="expense.js"></script>
+
+</body>
+
+</html>
